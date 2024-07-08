@@ -38,7 +38,7 @@ contract Tester is Test {
         rewardCTF.claim(rewardAmount, expiry, signature);
         assertEq(usdc.balanceOf(user), rewardAmount);
 
-        //Write in here you solution
+        //Write in here your solution
 
         // This asserts need to pass to solve the CTF
         assertEq(usdc.balanceOf(user), rewardAmount*2);
